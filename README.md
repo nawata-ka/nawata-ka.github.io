@@ -5,13 +5,13 @@ brew install<br>
 brew info<br>
 brew update && brew upgrade<br>
 history | grep ***[command]***<br>
+chmod ***[Authority type]*** [File path]***<br>
 sudo lsof -i ***[Port Number]***<br>
 kill -9 ***[Process ID]***<br>
 df -h<br>
 cat ***[File Name]***<br>
 asciinema rec<br>
 asciinema play ***[File]***<br>
-
 
 ## Git
 git help<br>
@@ -37,15 +37,14 @@ docker container ***[ID]*** start<br>
 docker container ***[ID]*** stop<br>
 docker inspect<br>
 docker exec -it ***[ID]*** bash<br>
-docker run -dit -p 8080:80 ***[Image name]***:***[Version]***<br>
-docker comit ***[Target]*** ***[New image]***<br>
+docker run -dit -p ***[Host port]***:***[Container port]*** --mount type=bind,***[Host dir]***,target=***[Container dir]*** ***[Image name]***:***[Version]***<br>
+docker commit ***[Target]*** ***[New image]***<br>
 docker exec -it ***[ID]*** bash<br>
 docker push ***[Image name]***:***[Version]***<br>
 docker pull ***[Image name]***:***[Version]***<br>
 docker build . -t ***[Image name]***:***[Version]***<br>
 docker tag ***[Target]*** ***[New tag]***<br>
 docker port<br>
-
 
 ## Jenkins
 brew services start jenkins<br>
