@@ -1,6 +1,6 @@
 # Command list
 
-## General
+## [General](https://www.hostinger.com/tutorials/linux-commands)
 brew install<br>
 brew info<br>
 brew update && brew upgrade<br>
@@ -10,6 +10,8 @@ sudo lsof -i ***[Port Number]***<br>
 kill -9 ***[Process ID]***<br>
 df -h<br>
 cat ***[File Name]***<br>
+
+## [asciinema](https://asciinema.org/docs/usage)
 asciinema rec<br>
 asciinema play ***[File]***<br>
 
@@ -53,14 +55,20 @@ brew services stop jenkins<br>
 curl ***[Job URL]***\?token\=***[Api key]***<br>
 java -jar jenkins-cli.jar -s http://localhost:8080/ -auth ***[User ID]***:***[Key]*** -webSocket build ***[Job name]***<br>
 
-## Soner Qube
+## [Sonar Qube](https://docs.sonarqube.org/latest/analyzing-source-code/scanners/sonarscanner/)
 sonar start<br>
 sonar console<br>
 sonar stop<br>
 
-## MVN
+## [MVN](https://jenkov.com/tutorials/maven/maven-commands.html)
+mvn -v<br>
+mvn install<br>
+mvn clean<br>
+mvn sonar:sonar -Dsonar.login=***[Token]***<br>
 
-alias | grep maven
-alias | grep mvn | wc -l
-gist --login
-gist
+## [Gradle](https://docs.gradle.org/current/userguide/command_line_interface.html)
+gradle -v<br>
+gradle build sonarqube -Dsonar.login=***[Token]***<br>
+gradle dependencyCheckAnalyze<br>
+gradle build<br>
+which gradle<br>
