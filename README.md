@@ -1,5 +1,7 @@
 # Command list
 
+![Devops Log](tux.png)
+
 ## General
 brew install<br>
 brew info<br>
