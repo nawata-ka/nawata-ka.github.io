@@ -13,7 +13,7 @@ cat ***[File Name]***<br>
 asciinema rec<br>
 asciinema play ***[File]***<br>
 
-## Git
+## [Git](https://docs.github.com/en/get-started/using-git/about-git)
 git help<br>
 git init<br>
 git config<br>
@@ -25,7 +25,7 @@ git remote add origin ***[URl]*** <br>
 git push -u origin main<br>
 git clone ***[URL]***<br>
 
-## Docker
+## [Docker](https://docs.docker.com/engine/reference/commandline/cli/)
 docker system<br>
 docker system info<br>
 docker system prune<br>
@@ -46,7 +46,7 @@ docker build . -t ***[Image name]***:***[Version]***<br>
 docker tag ***[Target]*** ***[New tag]***<br>
 docker port<br>
 
-## Jenkins
+## [Jenkins](https://www.jenkins.io/doc/book/managing/cli/)
 brew services start jenkins<br>
 brew services restart jenkins<br>
 brew services stop jenkins<br>
