@@ -5,7 +5,7 @@ brew install<br>
 brew info<br>
 brew update && brew upgrade<br>
 history | grep ***[command]***<br>
-chmod ***[Authority type]*** [File path]***<br>
+chmod ***[Authority type]*** ***[File path]*** [Link](https://www.computerhope.com/unix/uchmod.htm) <br>
 sudo lsof -i ***[Port Number]***<br>
 kill -9 ***[Process ID]***<br>
 df -h<br>
