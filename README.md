@@ -65,4 +65,3 @@ alias | grep maven
 alias | grep mvn | wc -l
 gist --login
 gist
-idea
