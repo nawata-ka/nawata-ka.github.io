@@ -1,7 +1,5 @@
 # Command list
 
-![Devops Log](tux.png)
-
 ## General
 brew install<br>
 brew info<br>
@@ -35,17 +33,17 @@ docker login<br>
 docker ps<br>
 docker image list<br>
 docker search ***[Image]***<br>
-docker container start<br>
-docker container stop<br>
+docker container ***[ID]*** start<br>
+docker container ***[ID]*** stop<br>
 docker inspect<br>
-docker exec -it ***[id]*** bash<br>
-docker run -dit -p 8080:80 knawata/nginx:1.0<br>
-docker comit 2714 knawata/nginx:0.1<br>
-docker exec -it ***[id]*** bash<br>
-docker push knawata/nginx:0.1<br>
-docker pull knawata/nginx:0.1<br>
-docker build . -t myfirstdocker:0.0.1<br>
-docker tag [tag1] [tag2]<br>
+docker exec -it ***[ID]*** bash<br>
+docker run -dit -p 8080:80 ***[Image name]***:***[Version]***<br>
+docker comit ***[Target]*** ***[New image]***<br>
+docker exec -it ***[ID]*** bash<br>
+docker push ***[Image name]***:***[Version]***<br>
+docker pull ***[Image name]***:***[Version]***<br>
+docker build . -t ***[Image name]***:***[Version]***<br>
+docker tag ***[Target]*** ***[New tag]***<br>
 docker port<br>
 
 
@@ -53,8 +51,8 @@ docker port<br>
 brew services start jenkins<br>
 brew services restart jenkins<br>
 brew services stop jenkins<br>
-curl http://127.0.0.1:8080/job/jenkins-cli-hello-world/build\?token\=KaoriApiToken<br>
-java -jar jenkins-cli.jar -s http://localhost:8080/ -auth admin:af4a9cc696924daf9b1e215c5dccff42 -webSocket build 'jenkins-cli-hello-world'<br>
+curl ***[Job URL]***\?token\=***[Api key]***<br>
+java -jar jenkins-cli.jar -s http://localhost:8080/ -auth ***[User ID]***:***[Key]*** -webSocket build ***[Job name]***<br>
 
 ## Soner Qube
 sonar start<br>
