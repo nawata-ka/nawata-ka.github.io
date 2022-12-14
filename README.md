@@ -1,5 +1,7 @@
 # Command list
 
+Thank you for letting me know many new commands, Prasanna! I try to add new commands to this page day by day!
+
 ## [General](https://www.hostinger.com/tutorials/linux-commands)
 brew install<br>
 brew info<br>
